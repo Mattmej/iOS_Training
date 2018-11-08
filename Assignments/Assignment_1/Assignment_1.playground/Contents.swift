@@ -51,6 +51,7 @@ var str = "Hello, playground"
 
 let firstArray: [Int] = [1, 2, 3, 4, 5]
 var newArray: [Int] = []
+//var newIndex:Int
 
 //func loopArray (loopNum:Int, arrayIn:Array<Int>, arrayOut:Array<Int>) -> Array<Int> {
 ////    for item in arrayIn {
@@ -68,6 +69,20 @@ var newArray: [Int] = []
 //}
 
 
+func loopArray(loopNum:Int, arrayIn:Array<Int>, arrayOut:inout Array<Int>) -> Array<Int> {
+    for var i in 0 ..< arrayIn.count {
+        if i + loopNum >= arrayIn.count {
+            var newIndex:Int = abs(arrayIn.count - (i + loopNum))
+            arrayOut[newIndex] = arrayIn[i]
+        }
+        else {
+            arrayOut[i+loopNum] = arrayIn[i]
+        }
+    }
+    
+    return arrayOut
+}
 
+loopArray(loopNum:3, arrayIn:firstArray, arrayOut: &newArray)
 
 

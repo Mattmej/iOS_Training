@@ -49,7 +49,8 @@ import UIKit
 
 var str = "Hello, playground"
 
-let firstArray: [Int] = [1, 2, 3, 4, 5]
+//let firstArray: [Int] = [1, 2, 3, 4, 5]
+let firstArray: [Int] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 var newArray: Array<Int?> = Array(repeating: nil, count: firstArray.count)
 //var newIndex:Int
 

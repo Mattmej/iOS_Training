@@ -10,10 +10,27 @@ import UIKit
 
 class SecondViewController: UIViewController {
 
+    @IBOutlet var secondView: UIView!
+    
+    @IBOutlet weak var segmentedControl: UISegmentedControl!
+    
+    @IBAction func segmentedController(_ sender: Any) {
+        switch segmentedControl.selectedSegmentIndex
+        {
+        case 0:
+            secondView.backgroundColor = UIColor.white;
+        case 1:
+            secondView.backgroundColor = UIColor.green;
+        default:
+            break;
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+
     }
 
     override func didReceiveMemoryWarning() {

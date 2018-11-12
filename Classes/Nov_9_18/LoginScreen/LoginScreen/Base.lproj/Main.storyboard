@@ -128,7 +128,7 @@
                                     <constraint firstAttribute="height" constant="71" id="IYg-OU-s8v"/>
                                 </constraints>
                             </imageView>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Th6-TS-1xO">
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" selected="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Th6-TS-1xO">
                                 <rect key="frame" x="166" y="577" width="121" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
@@ -164,6 +164,10 @@
                         <viewLayoutGuide key="safeArea" id="KRh-uM-ZI4"/>
                     </view>
                     <connections>
+                        <outlet property="bodyText" destination="ibx-ip-rjX" id="SB5-A5-TWy"/>
+                        <outlet property="myHometown" destination="0iJ-41-QSR" id="0Y5-4f-pfE"/>
+                        <outlet property="myName" destination="GPx-hu-o9N" id="JiZ-he-ueX"/>
+                        <outlet property="myOccupation" destination="ZGI-tg-hqr" id="ZvN-kI-QZM"/>
                         <outlet property="secondView" destination="jtx-sE-rvx" id="KUv-Oh-iA3"/>
                         <outlet property="segmentedControl" destination="Th6-TS-1xO" id="qtl-Jz-d89"/>
                     </connections>

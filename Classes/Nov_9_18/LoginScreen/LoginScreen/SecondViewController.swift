@@ -14,13 +14,29 @@ class SecondViewController: UIViewController {
     
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     
+    @IBOutlet weak var myName: UILabel!
+    @IBOutlet weak var myOccupation: UILabel!
+    @IBOutlet weak var myHometown: UILabel!
+    @IBOutlet weak var bodyText: UITextView!
+    
+    
     @IBAction func segmentedController(_ sender: Any) {
         switch segmentedControl.selectedSegmentIndex
         {
         case 0:
             secondView.backgroundColor = UIColor.white;
+            myName.textColor = UIColor.black;
+            myOccupation.textColor = UIColor.black;
+            myHometown.textColor = UIColor.black;
+            bodyText.textColor = UIColor.black;
+            bodyText.backgroundColor = UIColor.white;
         case 1:
-            secondView.backgroundColor = UIColor.green;
+            secondView.backgroundColor = UIColor.darkGray;
+            myName.textColor = UIColor.white;
+            myOccupation.textColor = UIColor.white;
+            myHometown.textColor = UIColor.white;
+            bodyText.textColor = UIColor.white;
+            bodyText.backgroundColor = UIColor.darkGray;
         default:
             break;
         }

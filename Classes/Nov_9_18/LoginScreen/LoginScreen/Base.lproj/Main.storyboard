@@ -129,12 +129,13 @@
                                 </constraints>
                             </imageView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" selected="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Th6-TS-1xO">
-                                <rect key="frame" x="166" y="577" width="121" height="28"/>
+                                <rect key="frame" x="166" y="577" width="121" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
-                                    <segment title="First"/>
-                                    <segment title="Second"/>
+                                    <segment title="Light"/>
+                                    <segment title="Dark"/>
                                 </segments>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="segmentedController:" destination="FaJ-CN-GC0" eventType="valueChanged" id="Ynv-MD-ENg"/>
                                 </connections>
@@ -169,6 +170,7 @@
                         <outlet property="myName" destination="GPx-hu-o9N" id="JiZ-he-ueX"/>
                         <outlet property="myOccupation" destination="ZGI-tg-hqr" id="ZvN-kI-QZM"/>
                         <outlet property="secondView" destination="jtx-sE-rvx" id="KUv-Oh-iA3"/>
+                        <outlet property="segmentControl" destination="Th6-TS-1xO" id="A3X-VE-haF"/>
                         <outlet property="segmentedControl" destination="Th6-TS-1xO" id="qtl-Jz-d89"/>
                     </connections>
                 </viewController>

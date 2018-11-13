@@ -29,7 +29,7 @@ class ViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let vc = segue.destination as? SecondViewController
-        vc?.username = "Hello \(usernameField.text)"
+        vc?.username = "Hello \(usernameField.text!)"
     }
     
 }

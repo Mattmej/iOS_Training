@@ -9,13 +9,6 @@
 import UIKit
 
 class CalcViewController: UIViewController {
-    
-    @IBAction func button0(_ sender: Any) {
-        
-    }
-    
-    
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()

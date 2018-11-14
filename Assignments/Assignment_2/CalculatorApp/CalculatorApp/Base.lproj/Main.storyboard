@@ -423,9 +423,6 @@
                                                 <state key="normal" title="0">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
-                                                <connections>
-                                                    <action selector="button0:" destination="Blo-e9-gb3" eventType="touchUpInside" id="ZYW-8H-Ont"/>
-                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u4d-pZ-kC3">
                                                 <rect key="frame" x="90.5" y="0.0" width="80" height="120"/>
@@ -480,18 +477,6 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="995-Bj-DZX"/>
                     </view>
-                    <connections>
-                        <outlet property="button0" destination="Rpl-96-yCD" id="gGH-l9-U6O"/>
-                        <outlet property="button1" destination="bkM-Lf-zGj" id="Mmw-Gu-LSV"/>
-                        <outlet property="button2" destination="fg1-D4-A4T" id="2VU-Vg-8qH"/>
-                        <outlet property="button3" destination="3wT-SY-ol4" id="5Oe-f1-NSt"/>
-                        <outlet property="button4" destination="Cc5-mQ-AFr" id="3Jc-g0-BjG"/>
-                        <outlet property="button5" destination="RPR-pD-eMK" id="miJ-dr-cEc"/>
-                        <outlet property="button6" destination="X4C-l2-5Ju" id="ebs-zU-r5o"/>
-                        <outlet property="button7" destination="bkM-Lf-zGj" id="NCM-5N-CFW"/>
-                        <outlet property="button8" destination="zJc-I7-MHO" id="4pG-Sc-fMf"/>
-                        <outlet property="button9" destination="f7h-uI-DFB" id="EAU-Y4-1Iw"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9is-Io-D7e" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

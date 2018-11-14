@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Blo-e9-gb3">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -250,13 +250,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kZh-vY-JFs">
-                                <rect key="frame" x="10" y="103.5" width="355" height="20.5"/>
+                                <rect key="frame" x="10" y="20" width="355" height="104"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="104" id="H8Q-uV-Xhb"/>
+                                    <constraint firstAttribute="width" constant="355" id="zUW-rw-xGh"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="AD6-Y8-syp">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="AD6-Y8-syp">
                                 <rect key="frame" x="12" y="144" width="351" height="510"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="WW9-Z4-FdZ" userLabel="Row1">
@@ -463,6 +467,7 @@
                             <constraint firstItem="AD6-Y8-syp" firstAttribute="top" secondItem="kZh-vY-JFs" secondAttribute="bottom" constant="20" id="Cz6-TO-WRg"/>
                             <constraint firstItem="AD6-Y8-syp" firstAttribute="leading" secondItem="995-Bj-DZX" secondAttribute="leading" constant="12" id="F3m-jx-JFv"/>
                             <constraint firstItem="995-Bj-DZX" firstAttribute="trailing" secondItem="kZh-vY-JFs" secondAttribute="trailing" constant="10" id="NMw-8E-bhE"/>
+                            <constraint firstItem="kZh-vY-JFs" firstAttribute="top" secondItem="995-Bj-DZX" secondAttribute="top" id="RZ1-EV-ffh"/>
                             <constraint firstItem="995-Bj-DZX" firstAttribute="bottom" secondItem="AD6-Y8-syp" secondAttribute="bottom" constant="13" id="Vz6-Kv-eTt"/>
                             <constraint firstItem="kZh-vY-JFs" firstAttribute="leading" secondItem="995-Bj-DZX" secondAttribute="leading" constant="10" id="qYC-VV-jql"/>
                             <constraint firstItem="995-Bj-DZX" firstAttribute="trailing" secondItem="AD6-Y8-syp" secondAttribute="trailing" constant="12" id="wWf-Vf-WXj"/>

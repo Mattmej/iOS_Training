@@ -241,10 +241,10 @@
             </objects>
             <point key="canvasLocation" x="117.59999999999999" y="117.39130434782609"/>
         </scene>
-        <!--View Controller-->
+        <!--Calc View Controller-->
         <scene sceneID="MQF-s1-40M">
             <objects>
-                <viewController id="Blo-e9-gb3" sceneMemberID="viewController">
+                <viewController id="Blo-e9-gb3" customClass="CalcViewController" customModule="CalculatorApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WLj-BG-EM9">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

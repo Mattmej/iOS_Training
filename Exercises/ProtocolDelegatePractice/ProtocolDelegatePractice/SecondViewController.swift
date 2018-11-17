@@ -26,7 +26,10 @@ class SecondViewController: UIViewController {
 
     @IBAction func submitText(_ sender: Any) {
         delegate?.userSubmittedText(item: textbox.text!)
-        dismiss(animated: true, completion: nil)
+//        dismiss(animated: true, completion: nil)
+//        UINavigationController?.popViewController(animated:true)
+        
+        navigationController?.popViewController(animated: true)
     }
     
     override func viewDidLoad() {

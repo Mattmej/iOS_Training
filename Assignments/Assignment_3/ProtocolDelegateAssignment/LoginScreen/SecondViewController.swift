@@ -8,13 +8,6 @@
 
 import UIKit
 
-protocol textBoxDelegate: class {
-    func textBoxMessage(item:String) -> String
-}
-
-var delegate:textBoxDelegate?
-
-
 class SecondViewController: UIViewController {
 
     @IBOutlet var secondView: UIView!
@@ -29,21 +22,6 @@ class SecondViewController: UIViewController {
     @IBOutlet weak var bodyText: UITextView!
     
     @IBOutlet weak var segmentControl: UISegmentedControl!
-    
-    /////////////////////////////////
-    
-    @IBOutlet weak var textBox: UITextField!
-
-    
-    weak var delegate:textBoxDelegate?
-    
-    @IBAction func textBoxSubmit(_ sender: Any) {
-        delegate?.textBoxMessage(item: textBox.text!)
-    }
-    
-    
-    
-    
     
     @IBAction func segmentedController(_ sender: Any) {
         switch segmentedControl.selectedSegmentIndex

@@ -105,13 +105,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ibx-ip-rjX">
-                                <rect key="frame" x="30" y="302" width="315" height="250"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banner" translatesAutoresizingMaskIntoConstraints="NO" id="uM7-aa-EaF">
                                 <rect key="frame" x="0.0" y="70" width="375" height="71"/>
                                 <constraints>
@@ -130,29 +123,54 @@
                                     <action selector="segmentedController:" destination="FaJ-CN-GC0" eventType="valueChanged" id="Ynv-MD-ENg"/>
                                 </connections>
                             </segmentedControl>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n2A-Fa-o9D">
+                                <rect key="frame" x="13" y="368" width="349" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gfy-By-W7F">
+                                <rect key="frame" x="142" y="430" width="91" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="eF6-oo-8k4"/>
+                                    <constraint firstAttribute="width" constant="91" id="tlm-Gg-NUm"/>
+                                </constraints>
+                                <state key="normal" title="Submit"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Some Text!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cxW-20-Qs3">
+                                <rect key="frame" x="122" y="315" width="130" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="cxW-20-Qs3" firstAttribute="leading" secondItem="KRh-uM-ZI4" secondAttribute="leading" constant="122" id="05K-6e-g0N"/>
                             <constraint firstItem="Th6-TS-1xO" firstAttribute="leading" secondItem="KRh-uM-ZI4" secondAttribute="leading" constant="142" id="1pY-d9-11A"/>
+                            <constraint firstItem="gfy-By-W7F" firstAttribute="leading" secondItem="KRh-uM-ZI4" secondAttribute="leading" constant="142" id="2h4-zn-Y7Q"/>
                             <constraint firstItem="GPx-hu-o9N" firstAttribute="leading" secondItem="Ilc-db-Vxw" secondAttribute="trailing" constant="15" id="3T8-gS-Vyg"/>
                             <constraint firstAttribute="trailingMargin" secondItem="GPx-hu-o9N" secondAttribute="trailing" constant="43" id="8Yf-70-bGo"/>
                             <constraint firstItem="KRh-uM-ZI4" firstAttribute="bottom" secondItem="Th6-TS-1xO" secondAttribute="bottom" constant="60" id="Nbv-ik-dxC"/>
+                            <constraint firstItem="cxW-20-Qs3" firstAttribute="top" secondItem="Ilc-db-Vxw" secondAttribute="bottom" constant="43" id="O4D-I4-8IF"/>
                             <constraint firstItem="KRh-uM-ZI4" firstAttribute="trailing" secondItem="Th6-TS-1xO" secondAttribute="trailing" constant="142" id="RO4-xh-pRm"/>
                             <constraint firstItem="uM7-aa-EaF" firstAttribute="leading" secondItem="jtx-sE-rvx" secondAttribute="leading" id="RXz-dA-VGG"/>
                             <constraint firstItem="Ilc-db-Vxw" firstAttribute="top" secondItem="uM7-aa-EaF" secondAttribute="bottom" constant="13" id="UPg-Be-ltr"/>
-                            <constraint firstItem="ibx-ip-rjX" firstAttribute="leading" secondItem="KRh-uM-ZI4" secondAttribute="leading" constant="30" id="WJU-0m-pNJ"/>
-                            <constraint firstItem="Th6-TS-1xO" firstAttribute="top" secondItem="ibx-ip-rjX" secondAttribute="bottom" constant="27" id="Z6b-b0-4x9"/>
+                            <constraint firstItem="gfy-By-W7F" firstAttribute="top" secondItem="n2A-Fa-o9D" secondAttribute="bottom" constant="32" id="Whe-Mu-JpE"/>
                             <constraint firstItem="Ilc-db-Vxw" firstAttribute="leading" secondItem="jtx-sE-rvx" secondAttribute="leadingMargin" constant="13" id="hk2-wQ-vjG"/>
                             <constraint firstAttribute="trailing" secondItem="uM7-aa-EaF" secondAttribute="trailing" id="i6Q-U5-uOj"/>
+                            <constraint firstItem="n2A-Fa-o9D" firstAttribute="top" secondItem="cxW-20-Qs3" secondAttribute="bottom" constant="32" id="iDa-74-Y8B"/>
                             <constraint firstItem="uM7-aa-EaF" firstAttribute="top" secondItem="jtx-sE-rvx" secondAttribute="top" constant="70" id="kF8-8q-qOi"/>
-                            <constraint firstItem="KRh-uM-ZI4" firstAttribute="trailing" secondItem="ibx-ip-rjX" secondAttribute="trailing" constant="30" id="lpt-eR-suk"/>
-                            <constraint firstItem="ibx-ip-rjX" firstAttribute="top" secondItem="Ilc-db-Vxw" secondAttribute="bottom" constant="30" id="u2v-nc-oWD"/>
+                            <constraint firstItem="KRh-uM-ZI4" firstAttribute="trailing" secondItem="n2A-Fa-o9D" secondAttribute="trailing" constant="13" id="ltb-Ck-cOf"/>
+                            <constraint firstItem="Th6-TS-1xO" firstAttribute="top" secondItem="gfy-By-W7F" secondAttribute="bottom" constant="89" id="mLS-k9-AuF"/>
+                            <constraint firstItem="n2A-Fa-o9D" firstAttribute="leading" secondItem="KRh-uM-ZI4" secondAttribute="leading" constant="13" id="oLZ-6Y-mdg"/>
+                            <constraint firstItem="KRh-uM-ZI4" firstAttribute="trailing" secondItem="cxW-20-Qs3" secondAttribute="trailing" constant="123" id="pah-Ax-m58"/>
                             <constraint firstItem="GPx-hu-o9N" firstAttribute="top" secondItem="Ilc-db-Vxw" secondAttribute="top" id="weI-U7-XBy"/>
+                            <constraint firstItem="KRh-uM-ZI4" firstAttribute="trailing" secondItem="gfy-By-W7F" secondAttribute="trailing" constant="142" id="x37-F8-64g"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="KRh-uM-ZI4"/>
                     </view>
                     <connections>
-                        <outlet property="bodyText" destination="ibx-ip-rjX" id="SB5-A5-TWy"/>
                         <outlet property="secondView" destination="jtx-sE-rvx" id="KUv-Oh-iA3"/>
                         <outlet property="segmentControl" destination="Th6-TS-1xO" id="A3X-VE-haF"/>
                         <outlet property="segmentedControl" destination="Th6-TS-1xO" id="qtl-Jz-d89"/>
@@ -161,7 +179,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bjI-Fr-Swl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2434" y="113"/>
+            <point key="canvasLocation" x="2432.8000000000002" y="112.89355322338831"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ANt-gD-c1n">

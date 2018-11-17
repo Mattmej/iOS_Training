@@ -19,7 +19,6 @@ class SecondViewController: UIViewController {
     @IBOutlet weak var usernameDisplay: UILabel!
     
 
-    @IBOutlet weak var bodyText: UITextView!
     
     @IBOutlet weak var segmentControl: UISegmentedControl!
     
@@ -29,15 +28,11 @@ class SecondViewController: UIViewController {
             
         case 0:
             secondView.backgroundColor = UIColor.white;
-            bodyText.textColor = UIColor.black;
-            bodyText.backgroundColor = UIColor.white;
             segmentControl.backgroundColor = UIColor.white;
             segmentControl.tintColor = UIColor.darkGray;
             
         case 1:
             secondView.backgroundColor = UIColor.darkGray;
-            bodyText.textColor = UIColor.white;
-            bodyText.backgroundColor = UIColor.darkGray;
             segmentControl.backgroundColor = UIColor.darkGray;
             segmentControl.tintColor = UIColor.white;
             

@@ -50,7 +50,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="q9h-H7-vIo" kind="show" id="dBQ-NP-jIO"/>
+                                    <segue destination="q9h-H7-vIo" kind="show" identifier="sendDataForwards" id="dBQ-NP-jIO"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -67,6 +67,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="J63-iK-Ysf"/>
+                    <connections>
+                        <outlet property="userText" destination="h14-iW-O1X" id="794-kI-Xm4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -99,6 +102,9 @@
                                 <state key="normal" title="Submit">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="submitText:" destination="q9h-H7-vIo" eventType="touchUpInside" id="vFs-mE-VYM"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -110,6 +116,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="LjS-tL-06i"/>
                     </view>
+                    <connections>
+                        <outlet property="textbox" destination="NoM-TX-BKg" id="2Po-pm-nsP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pf0-ls-sWk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

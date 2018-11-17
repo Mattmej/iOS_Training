@@ -8,8 +8,26 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
+// Writing up the "contract"
+protocol BDelegate {
+    func userSubmittedText(item:String)
+}
 
+
+class SecondViewController: UIViewController {
+    
+    var item = ""
+    
+    @IBOutlet weak var textbox: UITextField!
+    
+    
+    // Creating the delegate property inside the ViewController
+    var delegate:BDelegate?
+
+    @IBAction func submitText(_ sender: Any) {
+        delegate?.userSubmittedText(item: textbox.text!)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

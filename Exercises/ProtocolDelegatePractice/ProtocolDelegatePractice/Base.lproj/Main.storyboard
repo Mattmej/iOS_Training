@@ -43,9 +43,6 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YVH-RR-Hw8">
                                 <rect key="frame" x="20" y="276" width="335" height="43"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="87" id="1fy-Ld-izI"/>
-                                </constraints>
                                 <state key="normal" title="Go to next page!">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -83,22 +80,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NoM-TX-BKg">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NoM-TX-BKg">
                                 <rect key="frame" x="30" y="247" width="315" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Enter Text Below!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UeM-bZ-MiT">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Text Below!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UeM-bZ-MiT">
                                 <rect key="frame" x="30" y="187" width="315" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nny-S0-YUp">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nny-S0-YUp">
                                 <rect key="frame" x="128" y="318" width="119" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="PIX-z4-vGL"/>
+                                    <constraint firstAttribute="width" constant="119" id="SmO-DJ-ggY"/>
+                                </constraints>
                                 <state key="normal" title="Submit">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -110,9 +110,15 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="LjS-tL-06i" firstAttribute="trailing" secondItem="UeM-bZ-MiT" secondAttribute="trailing" constant="30" id="1r1-Xy-3N7"/>
+                            <constraint firstItem="NoM-TX-BKg" firstAttribute="top" secondItem="UeM-bZ-MiT" secondAttribute="bottom" constant="39" id="QYa-cc-iaJ"/>
+                            <constraint firstItem="UeM-bZ-MiT" firstAttribute="top" secondItem="LjS-tL-06i" secondAttribute="top" constant="123" id="T9W-hw-PbZ"/>
                             <constraint firstItem="LjS-tL-06i" firstAttribute="trailing" secondItem="NoM-TX-BKg" secondAttribute="trailing" constant="30" id="UOu-Qi-PT1"/>
                             <constraint firstItem="UeM-bZ-MiT" firstAttribute="leading" secondItem="LjS-tL-06i" secondAttribute="leading" constant="30" id="XnI-ZR-UoU"/>
                             <constraint firstItem="NoM-TX-BKg" firstAttribute="leading" secondItem="LjS-tL-06i" secondAttribute="leading" constant="30" id="h6j-Vc-dBe"/>
+                            <constraint firstItem="LjS-tL-06i" firstAttribute="bottom" secondItem="nny-S0-YUp" secondAttribute="bottom" constant="269" id="hdf-qS-YcY"/>
+                            <constraint firstItem="LjS-tL-06i" firstAttribute="trailing" secondItem="nny-S0-YUp" secondAttribute="trailing" constant="128" id="nNL-mh-IbC"/>
+                            <constraint firstItem="nny-S0-YUp" firstAttribute="top" secondItem="NoM-TX-BKg" secondAttribute="bottom" constant="41" id="vhs-Dg-0YY"/>
+                            <constraint firstItem="nny-S0-YUp" firstAttribute="leading" secondItem="LjS-tL-06i" secondAttribute="leading" constant="128" id="wrI-J7-4pZ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="LjS-tL-06i"/>
                     </view>

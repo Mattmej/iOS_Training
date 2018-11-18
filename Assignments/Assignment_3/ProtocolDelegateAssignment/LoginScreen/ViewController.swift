@@ -8,9 +8,10 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, BDelegate {
     
     @IBOutlet weak var usernameField: UITextField!
+    @IBOutlet weak var submittedText: UILabel!
     
 
     override func viewDidLoad() {
@@ -30,7 +31,16 @@ class ViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let vc = segue.destination as? SecondViewController
         vc?.username = "Hello \(usernameField.text!)"
+        vc?.data = submittedText.text!
+        vc?.delegate = self
+        
     }
+    
+    func displaySubmittedText(data: String) {
+        submittedText.text = data
+    }
+    
+    
     
 }
 

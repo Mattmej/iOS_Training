@@ -54,9 +54,18 @@
                                     <segue destination="FaJ-CN-GC0" kind="show" id="ky0-ce-g06"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text Will Appear Here!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jf5-ea-rnc">
+                                <rect key="frame" x="102" y="416" width="170" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="jf5-ea-rnc" secondAttribute="bottom" constant="230" id="03p-cw-Fmo"/>
+                            <constraint firstItem="jf5-ea-rnc" firstAttribute="top" secondItem="8NX-Qg-m4N" secondAttribute="bottom" constant="98" id="0W2-Ve-0DY"/>
+                            <constraint firstItem="jf5-ea-rnc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="102" id="1a2-Mu-uXc"/>
                             <constraint firstItem="b0S-kd-fxZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="19" id="3jt-cN-0QQ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="UAD-qt-ssO" secondAttribute="trailing" constant="43" id="4Pg-Bw-NSX"/>
                             <constraint firstItem="o1F-Dw-yrQ" firstAttribute="top" secondItem="hXz-kT-t4c" secondAttribute="bottom" constant="30" id="5j7-hX-RiU"/>
@@ -70,12 +79,14 @@
                             <constraint firstItem="o1F-Dw-yrQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="19" id="vR1-tY-wAz"/>
                             <constraint firstItem="hXz-kT-t4c" firstAttribute="top" secondItem="b0S-kd-fxZ" secondAttribute="bottom" constant="11" id="vu6-LY-3ly"/>
                             <constraint firstItem="hXz-kT-t4c" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="19" id="wmQ-nG-LG7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jf5-ea-rnc" secondAttribute="trailing" constant="103" id="xEm-8E-2JA"/>
                             <constraint firstItem="8NX-Qg-m4N" firstAttribute="top" secondItem="UAD-qt-ssO" secondAttribute="bottom" constant="51" id="yIM-it-f91"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="XOy-P9-9kW"/>
                     <connections>
+                        <outlet property="submittedText" destination="jf5-ea-rnc" id="qoJ-gi-ynz"/>
                         <outlet property="usernameField" destination="hXz-kT-t4c" id="yiM-SO-s4c"/>
                     </connections>
                 </viewController>
@@ -136,6 +147,9 @@
                                     <constraint firstAttribute="width" constant="91" id="tlm-Gg-NUm"/>
                                 </constraints>
                                 <state key="normal" title="Submit"/>
+                                <connections>
+                                    <action selector="submitText:" destination="FaJ-CN-GC0" eventType="touchUpInside" id="53w-LP-Z76"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Some Text!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cxW-20-Qs3">
                                 <rect key="frame" x="122" y="315" width="130" height="21"/>
@@ -174,6 +188,7 @@
                         <outlet property="secondView" destination="jtx-sE-rvx" id="KUv-Oh-iA3"/>
                         <outlet property="segmentControl" destination="Th6-TS-1xO" id="A3X-VE-haF"/>
                         <outlet property="segmentedControl" destination="Th6-TS-1xO" id="qtl-Jz-d89"/>
+                        <outlet property="textbox" destination="n2A-Fa-o9D" id="YGM-mf-II8"/>
                         <outlet property="usernameDisplay" destination="GPx-hu-o9N" id="C34-tA-RTF"/>
                     </connections>
                 </viewController>

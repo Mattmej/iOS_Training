@@ -8,8 +8,16 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
+protocol BDelegate {
+    func displaySubmittedText(data:String)
+}
 
+class SecondViewController: UIViewController {
+    
+    var delegate:BDelegate?
+    var data = ""
+    @IBOutlet weak var textbox: UITextField!
+    
     @IBOutlet var secondView: UIView!
     
     @IBOutlet weak var segmentedControl: UISegmentedControl!
@@ -42,6 +50,20 @@ class SecondViewController: UIViewController {
 //            break;
         }
     }
+    
+    @IBAction func submitText(_ sender: Any) {
+        delegate?.displaySubmittedText(data: textbox.text!)
+        navigationController?.popViewController(animated: true)
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

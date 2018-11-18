@@ -51,8 +51,13 @@ class SecondViewController: UIViewController {
         }
     }
     
+    // What happens when the user presses the "submit" button
     @IBAction func submitText(_ sender: Any) {
+        
+        // The delegate will perform the "displaySubmittedText" function with the passed in data being the text of the textbox.
         delegate?.displaySubmittedText(data: textbox.text!)
+        
+        // This view controller will "pop" itself.
         navigationController?.popViewController(animated: true)
     }
     
@@ -69,6 +74,8 @@ class SecondViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
+        // When this page loads, set the usernameDisplay's text equal to whatever is in the "username" variable.
+        // The value was changed in the first ViewController.
         usernameDisplay.text = username
         
 

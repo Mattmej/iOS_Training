@@ -25,12 +25,12 @@ class ViewController: UIViewController, BDelegate {
     }
 
     @IBAction func clickedLogin(_ sender: Any) {
-        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let vc = segue.destination as? SecondViewController
         vc?.username = "Hello \(usernameField.text!)"
+        usernameField.text = ""
         vc?.data = submittedText.text!
         vc?.delegate = self
         

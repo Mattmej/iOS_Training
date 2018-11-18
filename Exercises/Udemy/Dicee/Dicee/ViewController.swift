@@ -28,6 +28,8 @@ class ViewController: UIViewController {
         randomDiceIndex2 = Int(arc4random_uniform(6))
         
         print(randomDiceIndex1)
+        
+        diceImageView1.image = UIImage(named: "dice2")
     }
     
     override func viewDidLoad() {
